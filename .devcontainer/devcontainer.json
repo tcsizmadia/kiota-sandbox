@@ -1,0 +1,20 @@
+{
+  "name": "Kiota Sandbox Dev Container",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [8080],
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "jdkDisto": "tem",
+      "installMaven": true
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-graph.kiota"
+      ]
+    }
+  },
+  "postCreateCommand": "sudo /bin/bash .devcontainer/installer.sh"
+}
