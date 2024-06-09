@@ -28,6 +28,6 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public Person upsertPerson(Person person) {
-        return null;
+        return this.personRepository.save(person);
     }
 }
