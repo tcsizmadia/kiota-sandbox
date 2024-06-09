@@ -12,9 +12,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-graph.kiota"
+        "ms-graph.kiota",
+        "ms-python.python"
       ]
     }
-  },
-  "postCreateCommand": "sudo /bin/bash .devcontainer/installer.sh"
+  }
 }
